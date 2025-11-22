@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Website - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <img src="img/revou.jpeg" alt="Logo" class="logo-thumb">
+            <span class="brand-title">My Website</span>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Message Us</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1 id="greeting">Hi, Welcome To Website</h1>
+                <p class="lead">Ini adalah website latihan pertama</p>
+            </div>
+
+            <div class="hero-banner">
+                <img src="img/banner.png" alt="Banner" />
+            </div>
+        </div>
+    </section>
+
+    <section class="headquarter container">
+        <h2>Our Headquarter</h2>
+        <div class="hq-list">
+
+            <div class="hq-item">
+                <img src="img/jakarta-hq.webp" alt="Headquarter Jakarta" class="hq-photo">
+                <span>Jakarta</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="message-us container">
+        <h2>Message Us</h2>
+        <div class="contact-grid">
+            <form id="messageForm" class="contact-form" novalidate>
+                <label>
+                    Nama
+                    <input type="text" id="name" name="name" required placeholder="Nama lengkap">
+                    <small class="error" data-for="name"></small>
+                </label>
+
+                <label>
+                    Tanggal Lahir
+                    <input type="date" id="dob" name="dob" required>
+                    <small class="error" data-for="dob"></small>
+                </label>
+
+                <fieldset class="gender-field">
+                    <legend>Jenis Kelamin</legend>
+                    <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+                    <small class="error" data-for="gender"></small>
+                </fieldset>
+
+                <label>
+                    Pesan
+                    <textarea id="message" name="message" rows="4" required placeholder="Tulis pesan..."></textarea>
+                    <small class="error" data-for="message"></small>
+                </label>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <div class="contact-preview" aria-live="polite">
+                <h3>Preview / Result</h3>
+                <pre id="previewBox">
+Current time: -
+Nama: -
+Tanggal Lahir: -
+Jenis Kelamin: -
+Pesan: -
+          </pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer container">
+    <button id="changeName" class="small">Change Name</button>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
